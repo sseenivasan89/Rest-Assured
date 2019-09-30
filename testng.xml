@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!-- This is a comprehensive test suit, which contains multiple tests -->
+<!-- each test select a subset of test methods from different test classes -->
+
+<suite name="TestMethods" verbose="1" parallel="tests">
+     <test name="all-tests" preserve-order="true" parallel="none"> 
+        <classes>
+        <class name = "TestMethods.GetMethod"/>
+        <class name = "TestMethods.PostMethod"/>
+        </classes>
+    </test>
+</suite>
